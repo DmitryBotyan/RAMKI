@@ -127,7 +127,7 @@ export default function AuthorPage() {
               {/* First article — featured */}
               {authorArticles.length >= 1 && (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                  <ArticleCard article={authorArticles[0]} variant="featured" />
+                  <ArticleCard article={authorArticles[0]!} variant="featured" />
                   {authorArticles[1] && (
                     <ArticleCard article={authorArticles[1]} variant="featured" />
                   )}
